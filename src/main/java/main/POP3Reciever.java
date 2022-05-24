@@ -23,7 +23,7 @@ import javax.mail.internet.MimeMultipart;
 
 public class POP3Reciever {
 
-	public void recieve(final String username,final String password)
+	public void recieve(final String username,final String password, String path)
 	{
 		try
 		{
@@ -58,7 +58,7 @@ public class POP3Reciever {
 	    		System.out.println("MESSAGE #" + (i + 1) + ":");
 	    		Message msg = messages[i];
 	    		System.out.println(msg.getSubject() + " from "+ msg.getFrom()[0]);
-	    		saveParts(msg.getContent(),"C:\\Users\\strio\\Desktop\\IMAP\\" + msg.getSubject());
+	    		saveParts(msg.getContent(),path+"\\" + msg.getSubject());
 	    		
 	    		System.out.print("Do you want to reply [y/n] : ");
 	    		String s = in.nextLine();

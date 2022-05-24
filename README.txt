@@ -1,11 +1,12 @@
-acesta e un proiect in eclipse.
+Acesta e un proiect in ecipse.
 
-este importata biblioteca adaugatoare javax.mail
+Pentru functionare este necasar de a introduce username-ul si parola si mapa unde vom salva atasamanetele in functia main.
 
-dependentele pom.xml
+Aplicatia ofera 3 functionalitati:
+1. trimiterea unui email
+2. citirea email-urilor prin POP3
+3. citirea email-urilor prin IMAP
 
-<dependency>
-	<groupId>com.sun.mail</groupId>
-        <artifactId>javax.mail</artifactId>
-        <version>1.6.2</version>
-</dependency>
+La citirea email-urilor atasamentele se pastreaza in mapa notata in functia main.
+
+La citirea email-urilor este posibila transmiterea reply-urilor.

@@ -9,6 +9,7 @@ public class Main {
 		Scanner in = new Scanner(System.in);
 		String username = "***";
 		String password = "***";
+		String path = "";
 		String s = "";
 		
 		while(!s.equals("exit"))
@@ -27,12 +28,12 @@ public class Main {
 			else if(s.equals("2"))
 			{
 				POP3Reciever reciever = new POP3Reciever();
-				reciever.recieve(username, password);
+				reciever.recieve(username, password, path);
 			}
 			else if(s.equals("3"))
 			{
 				IMAPReciever reciever = new IMAPReciever();
-				reciever.recieve(username, password);
+				reciever.recieve(username, password, path);
 			}
 		}
 
