@@ -10,3 +10,5 @@ Aplicatia ofera 3 functionalitati:
 La citirea email-urilor atasamentele se pastreaza in mapa notata in functia main.
 
 La citirea email-urilor este posibila transmiterea reply-urilor.
+
+
